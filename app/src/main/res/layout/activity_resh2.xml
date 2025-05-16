@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/main"
+        android:background="@color/pink">
+
+        <!-- Картинка рецепта -->
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/new2"
+            android:scaleType="centerCrop" />
+
+        <!-- Контейнер для заголовка и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Омлет с сыром и зеленью"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Кнопка "Избранное" -->
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/title_dashboard"
+                android:src="@drawable/ic_favorite_border" />
+
+        </LinearLayout>
+
+        <!-- Ингредиенты -->
+        <TextView
+            android:id="@+id/detail2_ingredients1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Яйца - 2шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail2_ingredients2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Молоко - 50мл."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail2_ingredients3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Зеленый лук - 15г."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail2_ingredients4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сыр - 30г."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail2_ingredients5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Соль - по вкусу"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail2_ingredients6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сливочное масло - 20г."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <!-- Инструкция -->
+        <TextView
+            android:id="@+id/detail_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="
+1. 🧀 Сыр натираем на крупной терке, зелень моем и измельчаем ножом. Вместо лука можно брать укроп, если, к примеру, дети не признают лук.\n
+2. 🥚В миске соединяем яйца, молоко и зеленый лук, солим по вкусу.\n
+3. 🫕Содержимое взбиваем венчиком до однородности. Всего на подготовление продуктов и приготовление яичной массы у нас уйдет 5 минут\n
+4. 🍳На сковороде (у меня - диаметром 20 см) растапливаем сливочное масло, вливаем яичную массу, на одну половинку насыпаем сыр. Жарим на огне ниже среднего приблизительно 2 минуты. Чем меньше сковорода, тем пышнее получится омлет\n
+5. 🥘Накрываем половинку с сыром второй половинкой. Жарим еще 1,5 минуты.\n
+6. 🥘Переворачиваем омлет на другую сторону и жарим 1,5 минуты.\n
+Омлет с зеленью и сыром готов. Приятного аппетита!"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="6dp"/>
+
+    </LinearLayout>
+</ScrollView>

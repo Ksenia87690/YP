@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/main"
+        android:background="@color/pink">
+
+        <!-- Картинка рецепта -->
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/new3"
+            android:scaleType="centerCrop" />
+
+        <!-- Контейнер для заголовка и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Французские тосты с бананом"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Кнопка "Избранное" -->
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/title_dashboard"
+                android:src="@drawable/ic_favorite_border" />
+
+        </LinearLayout>
+
+        <!-- Ингредиенты -->
+        <TextView
+            android:id="@+id/detail3_ingredients1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сахар - 1/2 чайной ложки"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Вода - 4 столовые ложки"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сливочное масло - 1 столовая ложка"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Яйцо - 2шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Молоко - 3 столовые ложки"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Бананы - 1шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Коричневый сахар - 4 столовые ложки"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail3_ingredients8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Батон - 2шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <!-- Инструкция -->
+        <TextView
+            android:id="@+id/detail_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="
+1. 🥚Яйца взбейте с молоком и сахаром.\n
+2. 🥖Окуните каждый кусок хлеба в эту смесь. Нагрейте сковороду на среднем огне, влейте масло, и на шипящем масле обжарьте тост с обеих сторон до золотисто-коричневой корочки.\n
+3. 🍭Для карамели в маленькой кастрюльке смешайте масло, воду и сахар. Доведите до кипения на среднем огне. Дайте смеси покипеть около 3 минут или пока смесь не начнет густеть.\n
+4. 🍌Снимите с огня. Добавьте в соус бананы. Накройте чем-нибудь и оставьте на 2 минуты.\n
+5. 🥞Залейте тосты карамелью и подавайте к столу."
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="6dp"/>
+
+    </LinearLayout>
+</ScrollView>

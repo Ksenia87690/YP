@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/main">
+
+        <!-- Картинка рецепта -->
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/new1"
+            android:scaleType="centerCrop" />
+
+        <!-- Контейнер для заголовка и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Простой завтрак из картофеля с яичной заливкой"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Кнопка "Избранное" -->
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/title_dashboard"
+                android:src="@drawable/ic_favorite_border" />
+
+        </LinearLayout>
+
+        <!-- Ингредиенты -->
+        <TextView
+            android:id="@+id/detail_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="яйца"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <!-- Инструкция -->
+        <TextView
+            android:id="@+id/detail_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сам сделаешь"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="6dp"/>
+
+    </LinearLayout>
+</ScrollView>

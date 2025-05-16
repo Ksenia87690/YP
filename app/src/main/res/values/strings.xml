@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YP</string>
+    <string name="Hello">Добро пожаловать!</string>
+    <string name="login">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="email">Введите e-mail</string>
+    <string name="password">Введите пароль</string>
+    <string name="name">Введите имя</string>
+    <string name="title_activity_main_manu">MainManu</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Избранное</string>
+    <string name="title_notifications">Корзина</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+</resources>

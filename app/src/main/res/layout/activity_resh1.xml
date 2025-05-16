@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/main"
+        android:background="@color/pink">
+
+
+        <!-- Картинка рецепта -->
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/new1"
+            android:scaleType="centerCrop" />
+
+        <!-- Контейнер для заголовка и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Простой завтрак из картофеля с яичной заливкой"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Кнопка "Избранное" -->
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/title_dashboard"
+                android:src="@drawable/ic_favorite_border" />
+
+        </LinearLayout>
+
+        <!-- Ингредиенты -->
+        <TextView
+            android:id="@+id/detail1_ingredients1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Картофель - 4 штуки"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Яйцо - 8шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Соль и перец - по вкусу"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Салатный микс - 4 горсти"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Помидоры черри - 12шт."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Сыр - 120г."
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/detail1_ingredients7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Колбаска - 8 ломтиков (можно ветчину, бекон или грибы)"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <!-- Инструкция -->
+        <TextView
+            android:id="@+id/detail_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="
+1. 🥔 Нарежьте картофель тонкими пластинами и обжарьте на сковороде с небольшим количеством масла до золотистой корочки с обеих сторон.\n
+2. 🥚 Взбейте яйца с солью и перцем, затем равномерно залейте ими картофель\n
+3. 🔥 Уменьшите огонь и накройте сковороду крышкой — дайте яйцам схватиться\n
+4. 🧀 Сверху выложите выбранную начинку — у меня это салатный микс, сыр, нарезанные помидорки и ломтики колбаски.\n
+5. ⏳ Готовьте ещё 1–2 минуты под крышкой, чтобы сыр слегка расплавился.\n
+6. ✨ Аккуратно переложите на тарелку, украсьте зеленью или сбрызните оливковым маслом по желанию.\n
+Нежно, хрустяще, питательно — идеальный старт для бодрого дня 💛"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="6dp"/>
+
+    </LinearLayout>
+</ScrollView>
